@@ -1,2 +1,2 @@
-# NASDAQ_Scraper
+# YahooFinance_Scraper
 messing with web scrapers
