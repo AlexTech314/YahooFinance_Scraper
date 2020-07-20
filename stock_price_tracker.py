@@ -1,3 +1,5 @@
+import pandas as pd
+import datetime
 import requests
 from bs4 import BeautifulSoup
 
@@ -11,6 +13,16 @@ def tracker(url, name):
     try:
         price = soup.find_all('div', {'class': 'My(6px) Pos(r) smartphone_Mt(6px)'})[0].find('span').text
         print('Current price of ' + name + ' ' + price)
+
+        for step in range(1, 101):
+            price = []
+            col = []
+            time_stamp = datetime.datetime.now()
+            time_stamp = time_stamp.strftime("%Y-%m-%d %H:%M:%S")
+            price.append(price)
+            col = [time_stamp]
+            col.extend(price)
+
     
     except:
         print("skip")
