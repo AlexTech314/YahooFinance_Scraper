@@ -19,6 +19,8 @@ def tracker(url, name):
         print("skip")
 
 
+
+
 while (True):
    tracker('https://finance.yahoo.com/quote/AAPL?p=AAPL&.tsrc=fin-srch', "Apple")
    tracker('https://finance.yahoo.com/quote/AMZN?p=AMZN&.tsrc=fin-srch', "Amazon")
